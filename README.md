@@ -12,7 +12,7 @@ The posts api, available in the `posts` directory, as the name suggests is used 
 ##### `npm start`
 
 Runs the app in the development mode.<br />
-Use GET/POST [http://localhost:4000] to view it in the postman/curl.
+Use GET/POST [http://localhost:4000/posts] to view it in the postman/curl.
 
 ### Comments api
 The comments api, available in the `comments` directory is used to add and retrieve comments associated with a post. 
