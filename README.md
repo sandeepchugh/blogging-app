@@ -1,6 +1,6 @@
 # Blogging application
 
-Demo project to showcase setting up a blogging application using nodejs and react.
+Demo project to showcase setting up a blogging application using nodejs and react using microservices to implement the CQRS pattern.
 
 ## APIs
 
