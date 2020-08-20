@@ -33,7 +33,17 @@ The query service api, available in the `query` directory is used to retrieve bl
 
 Runs the app in the development mode.<br />
 Use GET [http://localhost:4002/posts] to view it in the postman/curl.
-Use POST [http://localhost:4002/events] to view it in the postman/curl.
+Use POST [http://localhost:4002/events] to use the api in the postman/curl.
+
+### Moderation api
+The moderation service api, available in the `moderation` directory is used to moderate blog post comments. This service is notified by the event bus of new comments posted and either approves or rejects the comment. The moderated comment is published back to the event bus which pushes the updated comment to the query service. 
+
+#### Available Scripts
+
+##### `npm start`
+
+Runs the app in the development mode.<br />
+Use POST [http://localhost:4003/events] to use the api in the postman/curl.
 
 ### Event-Bus api
 The event bus is a simple implementation of a bus using an api, available in the `event-bus` directory and is used to forward the posts and comments to the query service. 
