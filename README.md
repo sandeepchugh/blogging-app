@@ -24,6 +24,26 @@ The comments api, available in the `comments` directory is used to add and retri
 Runs the app in the development mode.<br />
 Use GET/POST [http://localhost:4001/posts/:postid/comments] to view it in the postman/curl.
 
+### Query Service api
+The query service api, available in the `query` directory is used to retrieve blog posts and comments associated with the blog posts in a single call. This service provides the Query part of the CQRS implementation and is aligned to support the front end application by providing all the required data in a single call 
+
+#### Available Scripts
+
+##### `npm start`
+
+Runs the app in the development mode.<br />
+Use GET [http://localhost:4002/posts] to view it in the postman/curl.
+Use POST [http://localhost:4002/events] to view it in the postman/curl.
+
+### Event-Bus api
+The event bus is a simple implementation of a bus using an api, available in the `event-bus` directory and is used to forward the posts and comments to the query service. 
+
+#### Available Scripts
+
+##### `npm start`
+
+Runs the app in the development mode.<br />
+Use POST [http://localhost:4005/events] to view it in the postman/curl.
 
 ## Web application
 
