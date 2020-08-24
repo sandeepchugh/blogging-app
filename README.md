@@ -53,6 +53,12 @@ Stop and cleanup
 CTRL+C
 ```
 
+#### hosts file
+Add an entry of posts.com (or whichever domain we wish to use - update the ingress-svc.yaml as well) pointing to 127.0.0.1 in /etc/hosts
+
+#### Accessing the application in dev env
+http://posts.com
+
 ### Prod Environment
 
 Apply all deployment files in infra/k8s
